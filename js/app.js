@@ -4,6 +4,7 @@ const age = parseInt(prompt('Scrivi la tua età:'));
 console.log(age);
 
 const rateKm = 0.21;
+let ticketFullPrice = kilometres * rateKm;
 
 
 if (age < 18) {
@@ -15,6 +16,5 @@ if (age < 18) {
     seniorTicket = (ticketFullPrice * discountSenior) / 100;
     console.log(`Il costo del tuo biglietto è ${seniorTicket}€`);
 } else {
-    ticketFullPrice = kilometres * rateKm;
     console.log(`Il costo del tuo biglietto è ${ticketFullPrice}€`);
 }
