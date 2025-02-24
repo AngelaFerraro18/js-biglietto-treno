@@ -1,5 +1,8 @@
-let kilometres = parseInt(prompt('Ciao! Quanti chilometri devi percorrere?'));
+const kilometres = parseInt(prompt('Ciao! Quanti chilometri devi percorrere?'));
 console.log(kilometres);
-let age = parseInt(prompt('Scrivi la tua età:'));
+const age = parseInt(prompt('Scrivi la tua età:'));
 console.log(age);
 
+const rateKm = 0.21;
+const ticketFullPrice = kilometres * rateKm;
+console.log(ticketFullPrice);
